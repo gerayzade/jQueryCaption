@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Adding caption to image (jQuery)</title>
+        
+        <link href="example.css" type="text/css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet" />
+        
+        <!-- including jquery library (CDN) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
+        <script type="text/javascript" src="../jquery.caption.js"></script>
+    </head>
+    <body>
+        <div class="image-container">
+            <img id="679001" class="imgNG" src="http://proof.nationalgeographic.com/files/2015/07/NationalGeographic_679001.jpg" alt="Photograph by Joel Sartore" />
+            <button class="buttonNG">Add caption</button>
+        </div>
+        <a href="https://github.com/gerayzade/FractalTree" target="_blank"><img src="fork.png" class="fork-me" /></a>
+        <div class="copyright">jquery.caption.js &copy; H.G.</div>
+        <script type="text/javascript">
+            $('.buttonNG').click(function() {
+                $button = $(this);
+                $button.addClass('hide');
+                
+                setTimeout(function() {
+                    $button.remove();
+                }, 100);
+                
+                $('#679001').addCaption('Photograph by Joel Sartore');
+            });
+        </script>
+    </body>
+</html>

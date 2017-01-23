@@ -1,0 +1,107 @@
+html {
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	background: url(bg0.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    font-size: 1.2em;
+    font-family: 'Amatic SC';
+    padding: 2em 0;
+}
+
+.image-container {
+    width: 80%;
+    position: relative;    
+    margin: 0em auto;
+}
+
+.image-container .imgNG {
+    position: relative;
+    border: 4px solid #0b3a54;
+}
+
+.image-container .imgNG, .image-container .imgNG > img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-container .imgNG > figcaption {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 0.75em;
+    text-align: center;
+    background: rgba(11, 52, 84, 0.64);
+    color: aliceblue;
+}
+
+.image-container .buttonNG {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    border: 0;
+    background: #0b3a54;
+    color: aliceblue;
+    text-align: center;
+    padding: 0.25em 0.5em;
+    position: absolute;
+    top: 0.75em;
+    right: 0.75em;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Amatic SC';
+}
+
+.image-container .buttonNG:focus {
+    outline: 0;
+}
+
+.image-container .buttonNG:hover {
+    background: #39a6c0;
+}
+
+.image-container .buttonNG.hide {
+    opacity: 0;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 0.25em;
+}
+
+.fork-me {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    max-width: 150px;
+}
+
+@media (min-width: 768px) {
+    .image-container {
+        width: 40%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        margin: 0;
+    }
+}

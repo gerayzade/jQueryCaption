@@ -1,7 +1,16 @@
 # jQueryCaption
-Function which extends jQuery library and allows to dynamically add caption for image<br/><br/>
+Plugin which allows to dynamically add caption for image<br/><br/>
 ## How to use
-Simply apply function "addCaption" to image's selector. You can use parameter of function in order to generate caption. If it is undefined, image's "alt" value is used for caption by default.
+### Include jQuery:
+```javascript
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+```
+### Include plugin's code:
+```javascript
+<script type="text/javascript" src="/path/to/js/jquery.caption.js"></script>
+```
+### Call the plugin:
+You can use some String as a parameter in order to generate caption. If it is undefined, image's <b>alt</b> value is used for caption by default.
 ```javascript
 $("#selector").addCaption("Mishka na severe");
 ```

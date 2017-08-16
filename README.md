@@ -15,4 +15,4 @@ You can use some String as a parameter in order to generate caption. If it is un
 $("#selector").addCaption("Mishka na severe");
 ```
 <img width="500px" src="interface.png" /><br/><br/>
-View on <a href="http://www.gerayzade.me/dev/caption/" target="_blank">gerayzade.me</a>
+View on <a href="http://www.gerayzade.az/dev/caption/" target="_blank">gerayzade.az</a>
